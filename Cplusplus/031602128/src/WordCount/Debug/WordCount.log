@@ -1,2 +1,3 @@
-﻿  WordCount.cpp
-  WordCount.vcxproj -> F:\VS2017\WokeSpace\WordCount\Debug\WordCount.exe
+﻿  pch.cpp
+  WordCount.cpp
+  WordCount.vcxproj -> F:\GitHub\work\RG1816\personal-project\Cplusplus\031602128\src\Debug\WordCount.exe
