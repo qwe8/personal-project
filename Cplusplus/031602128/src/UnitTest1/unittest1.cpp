@@ -14,8 +14,8 @@ namespace UnitTest1
 			
 			A->init();
 			A->MYscanf("0.in");
-			A->eft_char = A->CountChar();
-			Assert::AreEqual(A->eft_char, (int)105);
+			A->eft_char = A->CountChar("0.in");
+			Assert::AreEqual(A->eft_char, (int)106);
 			// 测试字符是否统计正确
 		}
 		TEST_METHOD(Testline)
@@ -71,7 +71,7 @@ namespace UnitTest1
 		{
 			A->init();
 			A->MYscanf("6.in");
-			A->eft_char = A->CountChar();
+			A->eft_char = A->CountChar("6.in");
 			Assert::AreEqual(A->eft_char, (int)0);
 			A->eft_word = A->CountWord();
 			Assert::AreEqual(A->eft_word, (int)0);
@@ -81,7 +81,7 @@ namespace UnitTest1
 		{
 			A->init();
 			A->MYscanf("7.in");
-			A->eft_char = A->CountChar();
+			A->eft_char = A->CountChar("7.in");
 			Assert::AreEqual(A->eft_char, (int)894787);
 			A->eft_word = A->CountWord();
 			Assert::AreEqual(A->eft_word, (int)99814);
@@ -110,7 +110,7 @@ namespace UnitTest1
 		{
 			A->init();
 			A->MYscanf("11.in");
-			A->eft_char = A->CountChar();
+			A->eft_char = A->CountChar("11.in");
 			Assert::AreEqual(A->eft_char, (int)1000000);
 			A->eft_word = A->CountWord();
 			Assert::AreEqual(A->eft_word, (int)200000);
